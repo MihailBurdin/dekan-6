@@ -1,0 +1,116 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#loginScreen {
+  padding: 60px;
+  display: flex;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+}
+
+button {
+  margin-top: 140px;
+}
+
+.map1 {
+  background-image: url('./image/map1.jpg');
+}
+
+.map2 {
+  background-image: url('./image/map2.png');
+}
+
+.map3 {
+  background-image: url('./image/map3.jpg');
+}
+
+body {
+  background-image: url('./image/map1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 1000px;
+  background-color: #0044fe52;
+  border: 3px solid black;
+}
+
+.wrap_game {
+  position: absolute;
+  z-index: 1000;
+  background-color: #05177cda;
+  border: 5px solid black;
+  padding: 30px;
+  max-width: 600px;
+}
+
+#gameField {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-size: cover;
+}
+
+
+.finish {
+  position: absolute;
+  background-image: url('./image/finsih4.png');
+  background-size: cover;
+}
+
+.monster {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('./image/monstr.png');
+  background-size: cover;
+}
+
+
+.trap {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url('./image/trap.png');
+  background-size: cover;
+} 
+
+.player {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('./image/knight-plyaer.png');
+  background-size: cover;
+} 
+
+
+
+#resultScreen {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffffda;
+  border: 5px solid black;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+

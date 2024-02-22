@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дойди до финиша</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div id="loginScreen">
+        <div class="wrap">
+            <label for="mapSelect">Выберите карту:</label>
+            <select id="mapSelect">
+                <option value="map1">Карта 1</option>
+                <option value="map2">Карта 2</option>
+                <option value="map3">Карта 3</option>
+    
+            </select>
+        
+            <label for="playerNameInput">Введите имя:</label>
+            <input type="text" id="playerNameInput" placeholder="Имя игрока">
+        
+            <button id="startGameButton">Начать игру</button>
+        </div>
+
+    </div>
+    <div id="gameField" class="game-field" style="display: none;">
+        <div class="wrap_game">
+            <div>Игрок: <span id="displayName"></span></div>
+            <div>Текущее время: <span id="currentSystemTime"></span></div>
+            <div>Время в игре: <span id="gameElapsedTime">00:00</span></div>
+            <div>Жизни: <span id="playerLives">5</span></div>
+        </div>
+    </div>
+
+    <div id="resultScreen" style="display: none;">
+        <div>Время в игре: <span id="resultTime"></span></div>
+        <div>Количество столкновений с монстрами: <span id="resultMonsters"></span></div>
+        <div>Количество попаданий в ловушки: <span id="resultTraps"></span></div>
+        <div>Оставшиеся Жизни: <span id="resultLives"></span></div>
+        <button id="restartGameButton">Играть заново</button>
+    </div>
+
+<script src="./main.js"></script>
+</body>
+</html>
